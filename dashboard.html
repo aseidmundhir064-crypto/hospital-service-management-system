@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - HSMS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>HSMS Admin Dashboard</h2>
+  </nav>
+
+  <section class="cards">
+    <div class="card success">
+      <h3>Total Patients</h3>
+      <p id="totalPatients">0</p>
+    </div>
+    <div class="card accent">
+      <h3>Total Doctors</h3>
+      <p id="totalDoctors">0</p>
+    </div>
+    <div class="card warning">
+      <h3>Total Appointments</h3>
+      <p id="totalAppointments">0</p>
+    </div>
+    <div class="card danger">
+      <h3>System Activities</h3>
+      <p id="systemActivities">0</p>
+    </div>
+  </section>
+
+  <section class="table-section">
+    <h3>Manage Users</h3>
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>ID</th><th>Username</th><th>Email</th><th>Role</th><th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

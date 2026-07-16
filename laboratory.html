@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratory Dashboard - HSMS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Laboratory Dashboard</h2>
+  </nav>
+
+  <section class="requests">
+    <h3>  <img src="assets/images/lab.png" alt="Lab Icon" class="icon">Pending Test Requests</h3>
+    <table id="requestsTable">
+      <thead>
+        <tr><th>ID</th><th>Patient</th><th>Doctor</th><th>Test</th><th>Status</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="results-form">
+    <h3>Enter Test Result</h3>
+    <form id="resultForm">
+      <input type="number" id="requestId" placeholder="Lab Request ID" required>
+      <textarea id="resultDetails" placeholder="Result Details"></textarea>
+      <button type="submit">Save Result</button>
+    </form>
+  </section>
+
+  <section class="results-list">
+    <h3>Laboratory Results</h3>
+    <table id="resultsTable">
+      <thead>
+        <tr><th>ID</th><th>Test</th><th>Patient</th><th>Result</th><th>Date</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="assets/js/laboratory.js"></script>
+</body>
+</html>

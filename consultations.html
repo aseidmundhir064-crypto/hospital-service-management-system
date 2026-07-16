@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard - HSMS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Doctor Dashboard</h2>
+  </nav>
+
+  <section class="appointments">
+    <h3>Today's Appointments</h3>
+    <table id="appointmentsTable">
+      <thead>
+        <tr><th>ID</th><th>Patient</th><th>Date</th><th>Time</th><th>Status</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="consultation-form">
+    <h3>New Consultation</h3>
+    <form id="consultationForm">
+      <input type="number" id="patientId" placeholder="Patient ID" required>
+      <textarea id="symptoms" placeholder="Symptoms"></textarea>
+      <textarea id="diagnosis" placeholder="Diagnosis"></textarea>
+      <textarea id="notes" placeholder="Clinical Notes"></textarea>
+      <textarea id="treatment" placeholder="Treatment Plan"></textarea>
+      <button type="submit">Save Consultation</button>
+    </form>
+  </section>
+
+  <section class="consultations-list">
+    <h3>Consultation History</h3>
+    <table id="consultationsTable">
+      <thead>
+        <tr><th>ID</th><th>Patient</th><th>Date</th><th>Diagnosis</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="assets/js/consultations.js"></script>
+</body>
+</html>

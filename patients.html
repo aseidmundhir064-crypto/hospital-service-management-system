@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Receptionist - Patients</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Receptionist Dashboard</h2>
+  </nav>
+
+  <section class="form-section">
+    <h3> <img src="assets\images/patient.webp" alt="Patient Icon" class="icon">Register New Patient</h3>
+    <form id="patientForm">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="date" id="dob" required>
+      <select id="gender">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <input type="text" id="contact" placeholder="Contact" required>
+      <textarea id="address" placeholder="Address"></textarea>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <h3>Patient List</h3>
+    <table id="patientsTable">
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>DOB</th><th>Gender</th><th>Contact</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="assets/js/patients.js"></script>
+</body>
+</html>

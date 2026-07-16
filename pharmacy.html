@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pharmacy Dashboard - HSMS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Pharmacy Dashboard</h2>
+  </nav>
+
+  <section class="inventory">
+    <h3>Medicine Inventory</h3>
+    <table id="medicinesTable">
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>Category</th><th>Stock</th><th>Expiry</th><th>Price</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section class="prescriptions">
+    <h3>Prescriptions</h3>
+    <table id="prescriptionsTable">
+      <thead>
+        <tr><th>ID</th><th>Patient</th><th>Doctor</th><th>Date</th><th>Items</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="assets/js/pharmacy.js"></script>
+</body>
+</html>
